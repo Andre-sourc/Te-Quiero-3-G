@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te quiero mucho pequeña</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #000;
+            font-size: 24px;
+        }
+        .heart {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transform: rotate(-45deg);
+            margin-top: 20px;
+        }
+        .heart:before,
+        .heart:after {
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .heart:before {
+            top: -100px;
+            left: 0;
+        }
+        .heart:after {
+            left: 100px;
+            top: 0;
+        }
+        .letter {
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            color: white;
+            font-size: 100px;
+            font-weight: bold;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Te quiero mucho, pequeña</h1>
+    <div class="heart">
+        <div class="letter">G</div>
+    </div>
+</body>
+</html
